@@ -1,0 +1,9 @@
+#!/usr/local/bin/fish
+for remote in (git remote);
+	echo "Remote: $remote";
+	if test "$remote" = "upstream"
+		echo "Skipping push to upstream"
+	else
+		git push $remote $argv;
+	end
+end
