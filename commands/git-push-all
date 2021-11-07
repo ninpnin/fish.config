@@ -1,4 +1,4 @@
-#!/usr/local/bin/fish
+#!/usr/bin/env fish
 for remote in (git remote);
 	echo "Remote: $remote";
 	if test "$remote" = "upstream"

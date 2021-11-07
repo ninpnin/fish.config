@@ -1,2 +1,2 @@
-#!/usr/local/bin/fish
+#!/usr/bin/env fish
 for remote in (git remote); git pull $remote $argv; end
